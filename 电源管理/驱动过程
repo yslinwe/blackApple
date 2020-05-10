@@ -1,0 +1,19 @@
+
+网上看了很多关于变频的教程，操作步骤及其简略，对于老鸟来说很好理解，不一定适合小白，大佬请无视，小白福音，特整理转发：
+
+1、下载ResourceConverter.sh文件到桌面
+
+2、在clover的smbios要找一个变频满意的机型（比如我的是nuc8，cpu是i58259u，正好和mbp15.2的cpu一致），找到改机型的Board-id
+
+
+3、打开终端，运行cd ~/Desktop，因为ResourceConverter.sh第一步放在桌面
+
+4、继续在终端运行./ResourceConverter.sh --kext /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-827FB448E656EC26.plist（红色部分为第二步选择的机型Board-id）。
+
+
+5、此时桌面会生成CPUFriendProvider.kext
+
+
+6、把CPUFriend.kext、CPUFriendDataProvider.kext放入四叶草kexts\other目录重启。
+
+完成后用cpu-s中的电源监测查看，会发现变频正常，请无视cpu-s的自动检测。如有不对欢迎指教。
