@@ -100,76 +100,6 @@
 					<key>Comment</key>
 					<string>change ECDV to EC</string>
 				</dict>
-				<dict>
-					<key>Find</key>
-					<data>R0ZYMA==</data>
-					<key>Replace</key>
-					<data>SUdQVQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename GFX0 to IGPU (Graphics)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>UEVHUA==</data>
-					<key>Replace</key>
-					<data>R0ZYMA==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename PEGP to GFX0 (Graphics)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>TUVJXw==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename MEI to IMEI (PAVP)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>TFBDXw==</data>
-					<key>Replace</key>
-					<data>TFBDQg==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename LPC to LPCB (Power)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X09TSQ==</data>
-					<key>Replace</key>
-					<data>WE9TSQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename _OSI to XOSI (OS)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WERTTQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename _DSM to XDSM (NVDIMM)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WkRTTQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Rename _DSM to ZDSM (NVDIMM)</string>
-				</dict>
 			</array>
 			<key>Fixes</key>
 			<dict>
@@ -265,6 +195,11 @@
 			<key>Enabled</key>
 			<true/>
 		</dict>
+		<key>Hide</key>
+		<array>
+			<string>BOOTX64.EFI</string>
+			<string>Windows</string>
+		</array>
 		<key>Language</key>
 		<string>zh_CN:0</string>
 		<key>Scan</key>
@@ -286,22 +221,12 @@
 			<key>IntelGFX</key>
 			<string>0x04128086</string>
 		</dict>
-		<key>Properties</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>CwAAAA==</data>
-				<key>No-hda-gfx</key>
-				<data>qqqqqqoK</data>
-			</dict>
-		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>ResetHDA</key>
 			<true/>
 			<key>Inject</key>
-			<integer>11</integer>
+			<integer>15</integer>
 		</dict>
 		<key>USB</key>
 		<dict>
