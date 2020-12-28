@@ -1,1 +1,1 @@
-sudo mount -uw / 和killall Finder
+sudo mount -uw /&&killall Finder
